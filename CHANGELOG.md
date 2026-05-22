@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.6.0] - 2026-05-22
+
+### Features
+- Add `cargo binstall` support for pre-built binary installation
+- Replace custom update checker with `moz-cli-version-check` (shared cache with other Mozilla CLI tools)
+- `update` subcommand now tries `cargo binstall` first, falling back to `cargo install`
+- Add CI workflow for tests, formatting, clippy checks, and cross-platform release builds
+
+### Fixes
+- `init`: skip pre-commit setup and "Next steps" message when repository is already initialized
+
 ## [0.5.4] - 2026-04-29
 
 ### Fixes
