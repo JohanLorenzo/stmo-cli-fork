@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.6.1] - 2026-05-22
+
+### Fixes
+- `execute`: coerce numeric `--param` values to strings for text/date parameters (fixes Redash 400 errors)
+
 ## [0.6.0] - 2026-05-22
 
 ### Features
