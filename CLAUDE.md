@@ -1,6 +1,6 @@
 # stmo-cli
 
-Rust CLI for version controlling Redash queries and dashboards.
+Redash CLI that gives Claude Code direct access to sql.telemetry.mozilla.org — explore data sources, write and run queries, and deploy dashboards.
 
 ## Quick Reference
 

@@ -9,7 +9,7 @@ use moz_cli_version_check::VersionChecker;
 
 #[derive(Parser)]
 #[command(name = "stmo-cli", version)]
-#[command(about = "CLI tool for version controlling Redash queries and dashboards", long_about = None)]
+#[command(about = "Turn Claude Code into a data analyst on sql.telemetry.mozilla.org", long_about = None)]
 struct Cli {
     #[command(subcommand)]
     command: Commands,
@@ -267,7 +267,7 @@ fn is_llm_environment() -> bool {
 
 fn print_llm_help() {
     print!(
-        r#"stmo-cli — version control Redash queries/dashboards on sql.telemetry.mozilla.org
+        r#"stmo-cli — Redash CLI for sql.telemetry.mozilla.org. Explore data sources, run queries, deploy dashboards.
 REDASH_API_KEY required | REDASH_URL optional (default: https://sql.telemetry.mozilla.org)
 API key: https://sql.telemetry.mozilla.org/users/me → API Key section
 

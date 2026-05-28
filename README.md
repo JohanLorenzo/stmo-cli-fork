@@ -1,22 +1,26 @@
 # stmo-cli
 
-Rust CLI for version controlling Redash queries and dashboards.
+## How it works
 
-## Features
+stmo-cli is a CLI that Claude Code calls on your behalf. Install it, set your API key, and Claude Code can:
 
-- Version control Redash queries (SQL + metadata) and dashboards
-- Automatic query discovery from local files
-- Automatic deployment to Redash
-- Built in Rust for blazing fast performance
-- Pedantic code quality with clippy pre-commit hooks
+- **Explore** — discover data sources, find existing queries, browse schemas
+- **Write** — create new Redash queries with proper BigQuery SQL
+- **Deploy** — push queries, charts, and dashboards to STMO
+- **Execute** — run queries and inspect results
+- **Analyze** — export data for deeper analysis with other tools
+
+For example, ask Claude Code to:
+- "Find queries about Firefox DAU"
+- "Write a query to track [metric] over time"
+- "Fetch and run query #12345"
+- "Explore what telemetry tables are available"
+
+Pair it with the [mozdata plugin](https://github.com/mozilla/internal-aidev-plugins/tree/main/plugins/mozdata) for telemetry expertise and probe discovery.
 
 ## Prerequisites
 
 - Redash API key from https://sql.telemetry.mozilla.org
-
-## Claude Integration
-
-stmo-cli works great with the [mozdata-claude-plugin](https://github.com/mozilla/internal-aidev-plugins/tree/main/plugins/mozdata), which provides Mozilla telemetry expertise and discovery directly in Claude.
 
 ## Installation
 

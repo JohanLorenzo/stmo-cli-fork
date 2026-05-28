@@ -2,7 +2,7 @@
 name = "stmo-cli"
 version = "0.7.0"
 edition = "2024"
-description = "CLI for version controlling Redash queries and dashboards"
+description = "Turn Claude Code into a data analyst on sql.telemetry.mozilla.org"
 license = "MPL-2.0"
 repository = "https://github.com/JohanLorenzo/stmo-cli"
 readme = "README.md"
