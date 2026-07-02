@@ -1,12 +1,15 @@
 # Changelog
 
-## [Unreleased]
+## [0.8.0] - 2026-07-02
 
 ### Features
 - `schedule <IDs> --interval <SECONDS> [--time HH:MM] [--day-of-week N]`: set a query's refresh schedule in the local YAML (run `deploy` to push to Redash)
 - `schedule <IDs> --clear`: remove the refresh schedule from the local YAML
 - `discover --search`/`-q`: full-text search across all queries and dashboards (with `--limit`, default 50)
 - `execute` now resolves dynamic date tokens client-side
+
+### Fixes
+- `discover`/`fetch`: tolerate string `interval` values in query schedules returned by Redash (previously caused a deserialization error)
 
 ## [0.7.0] - 2026-05-27
 
