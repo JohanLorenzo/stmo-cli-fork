@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.9.1] - 2026-07-17
 
 ### Fixes
 - `execute`: cancel the Redash job when it times out or is interrupted (Ctrl-C), instead of leaving it running server-side with nobody waiting for the result ([#21](https://github.com/mozilla/stmo-cli/issues/21))
