@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.0] - 2026-10-06
+
+### Features
+- `init`: scaffold `AGENTS.md` with shared AI assistant instructions, while continuing to recognize existing `CLAUDE.md` scaffolds
+
+### Fixes
+- `dashboards deploy`: recreate a widget when its query or visualization selection changes, so the deployed widget matches the local YAML
+
 ## [0.11.2] - 2026-09-24
 
 ### Fixes
