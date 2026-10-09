@@ -17,6 +17,8 @@ updates:
         update-types:
           - minor
           - patch
+    allow:
+      - dependency-type: all
 
   - package-ecosystem: rust-toolchain
     directory: /
